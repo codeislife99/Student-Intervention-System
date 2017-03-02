@@ -1,6 +1,7 @@
-# Project 2: Supervised Learning
+# Supervised Learning
 ## Building a Student Intervention System
 
+###### The goal for this project is to identify students who might need early intervention before they fail to graduate.This is a typical classification problem because we have to predict the 'class' of students who might need early intervention.
 ### Install
 
 This project requires **Python 2.7** and the following Python libraries installed:
@@ -10,21 +11,6 @@ This project requires **Python 2.7** and the following Python libraries installe
 - [scikit-learn](http://scikit-learn.org/stable/)
 
 You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
-
-Udacity recommends our students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
-
-### Code
-
-Template code is provided in the notebook `student_intervention.ipynb` notebook file. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project.
-
-### Run
-
-In a terminal or command window, navigate to the top-level project directory `student_intervention/` (that contains this README) and run one of the following commands:
-
-```ipython notebook student_intervention.ipynb```  
-```jupyter notebook student_intervention.ipynb```
-
-This will open the iPython Notebook software and project file in your browser.
 
 ## Data
 
@@ -44,7 +30,7 @@ The dataset used in this project is included as `student-data.csv`. This dataset
 - `guardian` : student's guardian (nominal: "mother", "father" or "other")
 - `traveltime` : home to school travel time (numeric: 1 - <15 min., 2 - 15 to 30 min., 3 - 30 min. to 1 hour, or 4 - >1 hour)
 - `studytime` : weekly study time (numeric: 1 - <2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, or 4 - >10 hours)
-- `failures` : number of past class failures (numeric: n if 1<=n<3, else 4)
+- `failures` : number of past class failures (numeric: n if 1<=n<=3; else 4)
 - `schoolsup` : extra educational support (binary: yes or no)
 - `famsup` : family educational support (binary: yes or no)
 - `paid` : extra paid classes within the course subject (Math or Portuguese) (binary: yes or no)
